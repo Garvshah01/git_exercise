@@ -1,0 +1,109 @@
+1) git init
+2) & 3)  touch s2.txt
+	touch file1.txt
+	touch file2
+	git add .
+
+	git diff 
+	git commit -m "1st file"
+
+	mkdir folder1
+	nano file1.txt
+	git add .
+
+	git diff
+ 	git commit -m "udate file"
+	nano > f2.txt
+	git add .
+
+	git diff
+	git commit -m "file2 add"
+	cat > abc.txt
+	git add .
+
+	git diff
+	git commit - m "add abc"
+	git rm abc.txt
+
+	git diff
+	git commit -m "remove abc"
+
+4) nano .gitignore
+	// place file2.txt in .gitignore
+	commit -m ".ignore added"
+
+5) git checkout -- .
+
+6) 
+	git add .
+	git status
+	git reset -- HEAD . 
+
+7) 	git add.
+	git status
+	git revert -m “rever change” <sha1 code>
+
+8) git status
+
+9) git log
+
+10) git show 509da29572f8
+
+11) git branch feature 1
+	git branch feature 2
+	git branch -d feature 2
+
+12) git checkout feature1
+	nano f1f1.txt
+	git add .
+	git commit -m "update file1"
+
+13) git checkout master
+	nano f1f1.txt
+	git add .
+	git commit -m "update file1"
+
+14) git merge feature1
+	git status
+	nano f1f1.txt
+	git add .
+	git commit -m "merger"
+
+15) git checkout -b feature2
+	 nano f2f2.txt
+	git add .
+	git commit -m "change in f2"
+
+16 ) git checkout master
+	nano f2f2.txt
+	git add .
+	git commit -m "change in f2f2"
+
+17) git checkout feature2
+	git rebase master
+	git status
+	nano f2f2.txt
+	git add .
+	git commit -m "rebase"
+	git rebase --continue
+	git checkout master
+	git rebase feature2
+
+19) git checkout master
+	touch file4.txt
+	nano file1.txt
+	git add .
+	nano file5.txt
+	git stash
+	git checkout feature1
+	git checkout master
+	git status
+	git stash list
+	git show stash
+	git stash pop
+	git status 
+	git commit -m "stash used"
+
+20) git push origin master
+	
+	

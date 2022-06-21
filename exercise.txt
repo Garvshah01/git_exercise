@@ -38,6 +38,7 @@
 	git add .
 	git status
 	git reset -- HEAD . 
+	git checkout -- .
 
 7) 	git add.
 	git status
@@ -88,6 +89,10 @@
 	git rebase --continue
 	git checkout master
 	git rebase feature2
+	
+	# We need to commit changes after resolving conflict. then continue rebase process.
+
+18) In merge branches combines resolve conflicts manually and make one branch but in rebase the base of the branch is relocate after resolving conflicts. It, actually not relocate it execute series of commit on the the rebase branch.
 
 19) git checkout master
 	touch file4.txt

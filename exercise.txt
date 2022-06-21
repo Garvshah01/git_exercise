@@ -92,8 +92,7 @@
 	
 	# We need to commit changes after resolving conflict. then continue rebase process.
 
-18) In merge branches combines resolve conflicts manually and make one branch but in rebase the base of the branch is relocate after resolving conflicts. It, actually not relocate it execute series of commit on the the rebase branch.
-
+18) In merge command it joins two or more history together while  in rebase it changes the base of the branches. So,we can say tha merge preserves history as it happened but rebase rewrites it,  but rebase make easy navigation throughout project in compare to merge.
 19) git checkout master
 	touch file4.txt
 	nano file1.txt
